@@ -22,7 +22,7 @@ dependencies {
     implementation "org.apache.bval:bval-jsr:${versionMap.bval_jsr}"
     implementation "org.reflections:reflections:${versionMap.reflections}"
     implementation "io.micrometer:micrometer-core:1.5.1"
-    implementation "io.micrometer:micrometer-registry-prometheus:1.5.1"
+    implementation "io.micrometer:micrometer-registry-prometheus:1.6.3"
     testImplementation "org.hamcrest:hamcrest:${versionMap.hamcrest}"
     testImplementation "org.mockito:mockito-core:${versionMap.mockito}"
 }
