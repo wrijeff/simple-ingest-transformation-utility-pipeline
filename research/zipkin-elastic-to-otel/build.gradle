@@ -31,7 +31,7 @@ dependencies {
     compile project(':data-prepper-plugins:otel-trace-source')
     compile project(':data-prepper-plugins:otel-trace-raw-prepper')
     implementation "org.apache.commons:commons-lang3:3.11"
-    implementation "com.linecorp.armeria:armeria:1.0.0"
+    implementation "com.linecorp.armeria:armeria:1.4.0"
     implementation "com.linecorp.armeria:armeria-grpc:1.0.0"
     implementation "org.elasticsearch.client:elasticsearch-rest-high-level-client:${es_version}"
     implementation "io.opentelemetry:opentelemetry-proto:${versionMap.opentelemetry_proto}"
