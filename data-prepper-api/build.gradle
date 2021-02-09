@@ -2,7 +2,7 @@ plugins {
 
 }
 dependencies {
-    implementation "io.micrometer:micrometer-core:1.5.1"
+    implementation "io.micrometer:micrometer-core:1.6.3"
     testImplementation "org.hamcrest:hamcrest:${versionMap.hamcrest}"
 }
 jacocoTestCoverageVerification {

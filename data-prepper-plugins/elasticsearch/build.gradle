@@ -35,7 +35,7 @@ dependencies {
     implementation "com.fasterxml.jackson.core:jackson-databind:${versionMap.jackson_databind}"
     implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:${versionMap.jackson_dataformat_yaml}"
     implementation 'javax.ws.rs:javax.ws.rs-api:2.1.1'
-    implementation "io.micrometer:micrometer-core:1.5.1"
+    implementation "io.micrometer:micrometer-core:1.6.3"
     testImplementation("junit:junit:${versionMap.junit}") {
         exclude group:'org.hamcrest' // workaround for jarHell
     }
