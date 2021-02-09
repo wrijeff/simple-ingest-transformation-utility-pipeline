@@ -50,7 +50,7 @@ compileJava.options.warnings = false
 configurations.all {
     resolutionStrategy {
         force 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.11.1'
-        force 'com.fasterxml.jackson.core:jackson-databind:2.11.1'
+        force 'com.fasterxml.jackson.core:jackson-databind:2.12.1'
         force 'com.fasterxml.jackson.core:jackson-core:2.11.1'
         force 'com.google.guava:guava:29.0-jre'
         force 'org.apache.bval:bval-jsr:2.0.4'
