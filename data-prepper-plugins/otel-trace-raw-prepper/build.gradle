@@ -13,7 +13,7 @@ dependencies {
     implementation "com.linecorp.armeria:armeria-grpc:1.0.0"
     implementation "com.fasterxml.jackson.core:jackson-databind:${versionMap.jackson_databind}"
     implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:${versionMap.jackson_dataformat_yaml}"
-    testImplementation 'org.assertj:assertj-core:3.6.2'
+    testImplementation 'org.assertj:assertj-core:3.19.0'
     testImplementation "org.mockito:mockito-inline:${versionMap.mockito_inline}"
     testImplementation "org.hamcrest:hamcrest:${versionMap.hamcrest}"
 }
