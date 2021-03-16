@@ -35,7 +35,7 @@ dependencies {
     implementation "com.fasterxml.jackson.core:jackson-databind:2.12.2"
     implementation "com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.12.2"
     implementation 'javax.ws.rs:javax.ws.rs-api:2.1.1'
-    implementation "com.amazonaws:aws-java-sdk-core:1.11.965"
+    implementation "com.amazonaws:aws-java-sdk-core:1.11.975"
     implementation "com.github.awslabs:aws-request-signing-apache-interceptor:b3772780da"
     implementation "io.micrometer:micrometer-core:1.5.5"
     testImplementation("junit:junit:4.13.2") {
@@ -43,9 +43,6 @@ dependencies {
     }
     testImplementation "org.elasticsearch.test:framework:${es_version}"
     testImplementation "commons-io:commons-io:2.8.0"
-
-    compileOnly "com.puppycrawl.tools:checkstyle:8.41"
-    testImplementation "com.puppycrawl.tools:checkstyle:8.41"
 }
 
 // Workaround for Werror
@@ -54,7 +51,7 @@ compileJava.options.warnings = false
 // Resolve dependency conflict between ES sink and main project
 configurations.all {
     resolutionStrategy {
-        force 'com.amazonaws:aws-java-sdk-core:1.11.965'
+        force 'com.amazonaws:aws-java-sdk-core:1.11.975'
         force 'com.fasterxml.jackson.dataformat:jackson-dataformat-yaml:2.12.2'
         force 'com.fasterxml.jackson.core:jackson-databind:2.12.2'
         force 'com.fasterxml.jackson.core:jackson-core:2.12.2'
@@ -68,10 +65,8 @@ configurations.all {
         force 'com.fasterxml.jackson.dataformat:jackson-dataformat-smile:2.12.2'
         force 'junit:junit:4.13'
         force "org.slf4j:slf4j-api:1.7.30"
-        force "org.apache.logging.log4j:log4j-api:2.14.0"
-        force "org.apache.logging.log4j:log4j-core:2.14.0"
-        force "com.google.guava:guava:30.0-jre"
-        force "com.puppycrawl.tools:checkstyle:8.41"
+        force "org.apache.logging.log4j:log4j-api:2.14.1"
+        force "org.apache.logging.log4j:log4j-core:2.14.1"
     }
 }
 
